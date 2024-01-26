@@ -24,6 +24,7 @@ body {
   transform: scale(0);
   animation: fadeInIcon 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
   }
+
   /* Añadir animación de salida a todos los elementos dentro de la clase 'container' al salir de la página */
   body.loading .container  * {
     animation: none; /* Anular la animación cuando el mouse está sobre el encabezado para que no se repita al pasar sobre el ícono */
@@ -69,7 +70,6 @@ body {
 
 
   header:hover .icono {
-    animation: none; /* Anular la animación cuando el mouse está sobre el encabezado para que no se repita al pasar sobre el ícono */
     opacity: 1;
     transform: scale(1);
   }
