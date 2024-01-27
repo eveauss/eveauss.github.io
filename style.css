@@ -19,12 +19,7 @@ body {
   animation: fadeInIcon 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
   }
   
-  .footer-distributed * {
-    opacity: 0;
-  transform: scale(0);
-  animation: fadeInIcon 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
-  }
-
+  
   /* Añadir animación de salida a todos los elementos dentro de la clase 'container' al salir de la página */
   body.loading .container  * {
     animation: none; /* Anular la animación cuando el mouse está sobre el encabezado para que no se repita al pasar sobre el ícono */
@@ -32,11 +27,7 @@ body {
     transform: scale(1);
   }
 
-  body.loading .footer-distributed  * {
-    animation: none; /* Anular la animación cuando el mouse está sobre el encabezado para que no se repita al pasar sobre el ícono */
-    opacity: 1;
-    transform: scale(1);
-  }
+
   
   /* Definir las animaciones */
   @keyframes fadeInIcon {
@@ -192,21 +183,6 @@ h2 {
 
   
   
-  .footer-distributed .footer-icons {
-    margin-top: -25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footer-distributed .footer-icons a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    cursor: pointer;
-    margin-right: 10px;
-    margin-left: 30px;
-  }
+
   
 
